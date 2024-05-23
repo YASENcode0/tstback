@@ -18,3 +18,13 @@ app.get('/post',(req,res)=>{
     }
 
 })
+
+app.post('/hi',(req,res)=>{
+    
+    try{
+        res.send(' hello hi ')
+    }catch(err){
+        res.send({err}).status(500)
+    }
+
+})
